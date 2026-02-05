@@ -12,7 +12,7 @@ export type Project = {
   metrics?: ProjectMetric[];
   highlight?: string;
   challenge?: string;
-  type: "Principal" | "Secundário" | "Freelance";
+  type: "Principal" | "Secundário" | "Freelance" | "Open Source";
   icon: LucideIcon;
   images?: string[];
   githubUrl?: string;

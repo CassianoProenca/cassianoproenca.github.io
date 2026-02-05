@@ -1,4 +1,3 @@
-import React from 'react';
 import { Mail, Phone, Linkedin, Github, MapPin, Printer, ArrowLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
