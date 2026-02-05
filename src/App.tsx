@@ -64,7 +64,7 @@ function App() {
                  <Button onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })} className="bg-white text-black hover:bg-zinc-200 px-8 py-6 text-base font-bold transition-all">
                     Ver Cases de Sucesso
                  </Button>
-                 <a href="/portfolio/resume" target="_blank" rel="noopener noreferrer">
+                 <a href="/resume" target="_blank" rel="noopener noreferrer">
                     <Button variant="outline" className="border-zinc-700 text-zinc-300 hover:bg-zinc-900 hover:text-white gap-2 px-8 py-6 text-base transition-all">
                        <Download className="w-4 h-4" /> Baixar CV
                     </Button>
@@ -85,7 +85,7 @@ function App() {
                    {/* Fallback visual while user adds the photo */}
                    <div className="absolute inset-0 bg-linear-to-tr from-indigo-600/20 to-transparent z-10" />
                    <img 
-                    src="/portfolio/profile.png" 
+                    src="/profile.png" 
                     alt="Cassiano Melo - Desenvolvedor Fullstack" 
                     className="w-full h-full object-cover grayscale-0 hover:scale-105 transition-all duration-700"
                     onError={(e) => {

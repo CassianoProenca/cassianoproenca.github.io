@@ -7,7 +7,7 @@ import { Resume } from './pages/Resume.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/">
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/resume" element={<Resume />} />
