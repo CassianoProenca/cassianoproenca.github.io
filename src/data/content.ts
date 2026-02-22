@@ -32,7 +32,7 @@ export const projects: Project[] = [
     title: "Sistema de Helpdesk Corporativo",
     type: "Principal",
     description: "Solução fullstack desenvolvida para substituir processos manuais e informais. O sistema centralizou a gestão de TI, eliminando chamados via WhatsApp e gerando dados para tomada de decisão.",
-    techStack: ["Java Spring Boot", "React", "MySQL", "Docker"],
+    techStack: ["Java Spring Boot", "React", "MySQL", "Docker", "WebSocket"],
     metrics: [
       { label: "Chamados Resolvidos", value: "1.900+" },
       { label: "Usuários Ativos", value: "400+" },
@@ -47,7 +47,7 @@ export const projects: Project[] = [
     title: "Gestão de Eventos (Secretaria do Meio Ambiente)",
     type: "Secundário",
     description: "Sistema inteligente para gestão de eventos municipais, focado em otimização de recursos públicos e análise geográfica de demanda.",
-    techStack: ["Node.js", "React", "Leaflet", "PostgreSQL", "MinIO"],
+    techStack: ["Node.js", "React", "Leaflet", "MySQL", "MinIO", "Docker"],
     metrics: [
       { label: "Inteligência Geográfica", value: "Mapas de Calor" },
       { label: "Predição de Insumos", value: "Desperdício Zero" },
@@ -62,7 +62,7 @@ export const projects: Project[] = [
     title: "Donation-System: Gestão de Doações",
     type: "Open Source",
     description: "Projeto Open Source desenvolvido para instituições sem fins lucrativos. O sistema gerencia o fluxo de entrada e saída de doações (cestas básicas, roupas, insumos), garantindo transparência e controle de estoque real.",
-    techStack: ["React", "TypeScript", "Node.js", "SQLite"],
+    techStack: ["React", "Node.js", "PostegreSQL", "Docker", "Java Spring Boot"],
     metrics: [
       { label: "Foco Social", value: "Instituições Carentes" },
       { label: "Arquitetura", value: "Offline-First" },
@@ -78,7 +78,7 @@ export const projects: Project[] = [
     title: "E-commerce & ERP: Pink Closet",
     type: "Freelance",
     description: "Plataforma completa de vendas online com foco em alta performance e experiência de compra fluida. Inclui sistema de gestão interna (ERP) para controle de pedidos e estoque.",
-    techStack: ["React", "Node.js", "PostgreSQL", "Tailwind CSS"],
+    techStack: ["React", "Node.js", "PostgreSQL", "Tailwind CSS", "Docker", "NestJS", "GitHub Actions"],
     metrics: [
       { label: "Mobile-First UX", value: "100%" },
       { label: "Performance Score", value: "98/100" },

@@ -116,7 +116,7 @@ export function Resume() {
            <section>
               <h2 className="text-sm font-bold text-zinc-900 uppercase tracking-widest border-b border-zinc-300 pb-1 mb-3">Tech Stack</h2>
               <div className="flex flex-wrap gap-1.5">
-                 {['Java', 'Spring Boot', 'Node.js', 'TypeScript', 'React', 'Fastify', 'SQL', 'NoSQL', 'Docker', 'Git', 'AWS (Básico)', 'Azure (Básico)'].map(skill => (
+                 {['Java', 'Spring Boot', 'Node.js', 'TypeScript', 'React', 'Fastify', 'SQL', 'NoSQL', 'Docker', 'Git', 'AWS', 'Azure', 'CI/CD', 'Automação'].map(skill => (
                    <span key={skill} className="px-2 py-0.5 bg-zinc-100 border border-zinc-200 rounded text-xs font-semibold text-zinc-700 print:bg-white print:border-zinc-300">
                      {skill}
                    </span>
