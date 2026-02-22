@@ -47,7 +47,7 @@ function App() {
               transition={{ duration: 0.5 }}
             >
               <Badge variant="indigo" className="mb-4">
-                Disponível para Projetos
+                Aberto a Oportunidades
               </Badge>
               <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight text-white leading-tight">
                 Arquitetando soluções que <span className="text-transparent bg-clip-text bg-linear-to-r from-indigo-400 to-violet-400">resolvem problemas reais.</span>

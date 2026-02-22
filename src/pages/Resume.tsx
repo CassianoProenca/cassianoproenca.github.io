@@ -78,7 +78,7 @@ export function Resume() {
             <p className="text-sm font-semibold text-zinc-600 mb-2 italic">Estagiário em Desenvolvimento Full Stack</p>
             <ul className="list-disc list-outside ml-4 space-y-1 text-sm text-zinc-700 leading-snug">
               <li>Desenvolvimento fullstack (Front e Back-end) de soluções web e aplicações internas críticas.</li>
-              <li>Criação e manutenção do <strong>Sistema de Helpdesk Interno</strong>, utilizado por mais de 300 usuários, reduzindo chamados manuais.</li>
+              <li>Criação e manutenção do <strong>Sistema de Helpdesk Interno</strong>, utilizado por mais de 400 usuários, reduzindo chamados manuais.</li>
               <li>Atuação em todo o ciclo de vida do software: análise de requisitos, implementação, testes e deploy.</li>
               <li>Integração de sistemas legados com novas arquiteturas modernas para otimização de fluxos.</li>
               <li>Participação ativa em rituais ágeis, Code Reviews e planejamento de arquitetura escalável.</li>
@@ -116,7 +116,7 @@ export function Resume() {
            <section>
               <h2 className="text-sm font-bold text-zinc-900 uppercase tracking-widest border-b border-zinc-300 pb-1 mb-3">Tech Stack</h2>
               <div className="flex flex-wrap gap-1.5">
-                 {['Java', 'Spring Boot', 'Node.js', 'TypeScript', 'React', 'Fastify', 'SQL', 'NoSQL', 'Docker', 'Git', 'AWS', 'Azure', 'CI/CD', 'Automação'].map(skill => (
+                 {['Java', 'Spring Boot', 'Node.js', 'TypeScript', 'React', 'NestJS', 'Fastify', 'WebSocket', 'SQL', 'NoSQL', 'Docker', 'Git', 'VPS (Linux)', 'Nginx', 'CI/CD'].map(skill => (
                    <span key={skill} className="px-2 py-0.5 bg-zinc-100 border border-zinc-200 rounded text-xs font-semibold text-zinc-700 print:bg-white print:border-zinc-300">
                      {skill}
                    </span>

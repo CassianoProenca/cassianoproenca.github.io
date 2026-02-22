@@ -21,10 +21,10 @@ import donationLots from "../assets/donation-system/lotes.png";
 import donationUsers from "../assets/donation-system/usuarios.png";
 
 export const aboutMe = {
-  name: "Cassiano Augusto",
+  name: "Cassiano Melo",
   role: "Desenvolvedor Fullstack | Prefeitura de Votorantim",
   education: "Ciência da Computação (7º Semestre)",
-  description: "Meu nome é Cassiano Augusto, sou estudante do 7º semestre de Ciência da Computação e atuo como Desenvolvedor Fullstack na Prefeitura de Votorantim. Minha jornada técnica começou no Suporte de TI, uma experiência fundamental que moldou minha filosofia atual: o desenvolvimento de software começa na empatia pelo usuário, não no código. Entendi que ser desenvolvedor vai muito além da sintaxe; é sobre arquitetar soluções, documentar processos e resolver dores reais. Essa visão me permitiu sair da teoria e entregar sistemas que hoje impactam centenas de usuários diariamente, unindo a robustez do Java/Spring Boot com a experiência fluida do React."
+  description: "Meu nome é Cassiano Melo, sou estudante do 7º semestre de Ciência da Computação e atuo como Desenvolvedor Fullstack na Prefeitura de Votorantim. Minha jornada técnica começou no Suporte de TI, uma experiência fundamental que moldou minha filosofia atual: o desenvolvimento de software começa na empatia pelo usuário, não no código. Entendi que ser desenvolvedor vai muito além da sintaxe; é sobre arquitetar soluções, documentar processos e resolver dores reais. Essa visão me permitiu sair da teoria e entregar sistemas que hoje impactam centenas de usuários diariamente, unindo a robustez do Java/Spring Boot com a experiência fluida do React."
 };
 
 export const projects: Project[] = [
@@ -47,7 +47,7 @@ export const projects: Project[] = [
     title: "Gestão de Eventos (Secretaria do Meio Ambiente)",
     type: "Secundário",
     description: "Sistema inteligente para gestão de eventos municipais, focado em otimização de recursos públicos e análise geográfica de demanda.",
-    techStack: ["Node.js", "React", "Leaflet", "MySQL", "MinIO", "Docker"],
+    techStack: ["Node.js", "Fastify", "React", "TanStack Router", "Leaflet", "MySQL", "MinIO", "Docker"],
     metrics: [
       { label: "Inteligência Geográfica", value: "Mapas de Calor" },
       { label: "Predição de Insumos", value: "Desperdício Zero" },
@@ -62,7 +62,7 @@ export const projects: Project[] = [
     title: "Donation-System: Gestão de Doações",
     type: "Open Source",
     description: "Projeto Open Source desenvolvido para instituições sem fins lucrativos. O sistema gerencia o fluxo de entrada e saída de doações (cestas básicas, roupas, insumos), garantindo transparência e controle de estoque real.",
-    techStack: ["React", "Node.js", "PostegreSQL", "Docker", "Java Spring Boot"],
+    techStack: ["React", "Node.js", "PostgreSQL", "Docker", "Java Spring Boot"],
     metrics: [
       { label: "Foco Social", value: "Instituições Carentes" },
       { label: "Arquitetura", value: "Offline-First" },
@@ -78,13 +78,14 @@ export const projects: Project[] = [
     title: "E-commerce & ERP: Pink Closet",
     type: "Freelance",
     description: "Plataforma completa de vendas online com foco em alta performance e experiência de compra fluida. Inclui sistema de gestão interna (ERP) para controle de pedidos e estoque.",
-    techStack: ["React", "Node.js", "PostgreSQL", "Tailwind CSS", "Docker", "NestJS", "GitHub Actions"],
+    techStack: ["React", "Node.js", "PostgreSQL", "Tailwind CSS", "Docker", "NestJS", "GitHub Actions", "VPS (Linux)", "Nginx Proxy Manager"],
     metrics: [
       { label: "Mobile-First UX", value: "100%" },
       { label: "Performance Score", value: "98/100" },
       { label: "SEO Optimized", value: "A+" }
     ],
-    highlight: "Desenvolvimento de Painel Administrativo customizado para gestão de catálogo e fluxo de pedidos em tempo real.",
+    highlight: "Desenvolvimento de Painel Administrativo customizado para gestão de catálogo e fluxo de pedidos em tempo real. Toda a infraestrutura roda em VPS Linux própria, com deploy automatizado via GitHub Actions e proteção por Reverse Proxy Manager — sem exposição de portas direta.",
+    challenge: "Configuração completa da infraestrutura: VPS Linux provisionada do zero, containers Docker orquestrados por Compose, pipelines de CI/CD no GitHub Actions entregando em produção automaticamente, e Nginx Proxy Manager gerenciando SSL e roteamento sem expor portas da aplicação.",
     icon: ShoppingBag,
     images: [pinkHome, pinkAdmin, pinkOrders, pinkProfile]
   }
