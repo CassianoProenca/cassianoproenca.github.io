@@ -109,7 +109,7 @@ export const projects: Project[] = [
       { label: "Em Produção", value: "Ativo" }
     ],
     highlight: "Fluxo de conversão projetado para engajar: navegação fluida que conduz naturalmente o visitante da apresentação dos serviços até a solicitação de cotação via WhatsApp — clientes que chegam, convertem.",
-    challenge: "Fluxo de captação otimizado para conversão: o cliente preenche a cotação no site e é direcionado ao WhatsApp com os dados já estruturados, reduzindo o tempo de resposta da equipe comercial.",
+    challenge: "A escolha por React com shadcn/ui para uma landing page foi deliberada: componentes reutilizáveis permitiram iterar o design com o cliente em tempo real. A integração WhatsApp monta a mensagem de cotação dinamicamente com os dados do formulário — sem backend, sem servidor, processamento 100% no browser.",
     icon: Truck,
     images: [fretepagooHero, fretepagooSobre, fretepagooEspecialidades, fretepagaoCotacao, fretepagaoParceiros, fretepagooCarrousel],
     liveUrl: "https://fretepagoo.com"
