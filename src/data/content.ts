@@ -1,4 +1,4 @@
-import { Database, ShoppingBag, Map, HeartHandshake } from "lucide-react";
+import { Database, ShoppingBag, Map, HeartHandshake, Truck } from "lucide-react";
 import type { Project } from "../types";
 
 // Assets imports
@@ -12,6 +12,14 @@ import pinkHome from "../assets/pinkcloset/homepinkcloset.png";
 import pinkAdmin from "../assets/pinkcloset/paineladmpinkcloset.png";
 import pinkOrders from "../assets/pinkcloset/gerenciadordepedidopinkcloset.png";
 import pinkProfile from "../assets/pinkcloset/meuperfilpinkcloset.png";
+
+// Frete Pagoo Assets
+import fretepagooHero from "../assets/fretepagoo/hero.png";
+import fretepagooSobre from "../assets/fretepagoo/sobre.png";
+import fretepagooEspecialidades from "../assets/fretepagoo/especialidades.png";
+import fretepagaoCotacao from "../assets/fretepagoo/solicite-uma-cotacao.png";
+import fretepagaoParceiros from "../assets/fretepagoo/parceiros.png";
+import fretepagooCarrousel from "../assets/fretepagoo/carrousel-marcas-pq-escolher.png";
 
 // SolidaryStock (Donation System) Assets - Renamed for clarity
 import donationDash from "../assets/donation-system/dashboard.png";
@@ -87,6 +95,23 @@ export const projects: Project[] = [
     highlight: "Desenvolvimento de Painel Administrativo customizado para gestão de catálogo e fluxo de pedidos em tempo real. Toda a infraestrutura roda em VPS Linux própria, com deploy automatizado via GitHub Actions e proteção por Reverse Proxy Manager — sem exposição de portas direta.",
     challenge: "Configuração completa da infraestrutura: VPS Linux provisionada do zero, containers Docker orquestrados por Compose, pipelines de CI/CD no GitHub Actions entregando em produção automaticamente, e Nginx Proxy Manager gerenciando SSL e roteamento sem expor portas da aplicação.",
     icon: ShoppingBag,
-    images: [pinkHome, pinkAdmin, pinkOrders, pinkProfile]
+    images: [pinkHome, pinkAdmin, pinkOrders, pinkProfile],
+    liveUrl: "https://pinkcloset.cassiano.cloud/"
+  },
+  {
+    title: "Frete Pagoo: Site Institucional",
+    type: "Freelance",
+    description: "Landing page institucional para empresa especializada em transporte refrigerado de cargas. Plataforma com integração direta ao WhatsApp para captação de leads e solicitação de cotações em tempo real.",
+    techStack: ["React", "Vite", "TypeScript", "Tailwind CSS", "shadcn/ui", "WhatsApp API"],
+    metrics: [
+      { label: "Captação de Leads", value: "WhatsApp" },
+      { label: "Empresa Ativa", value: "Desde 2013" },
+      { label: "Em Produção", value: "Ativo" }
+    ],
+    highlight: "Fluxo de conversão projetado para engajar: navegação fluida que conduz naturalmente o visitante da apresentação dos serviços até a solicitação de cotação via WhatsApp — clientes que chegam, convertem.",
+    challenge: "Fluxo de captação otimizado para conversão: o cliente preenche a cotação no site e é direcionado ao WhatsApp com os dados já estruturados, reduzindo o tempo de resposta da equipe comercial.",
+    icon: Truck,
+    images: [fretepagooHero, fretepagooSobre, fretepagooEspecialidades, fretepagaoCotacao, fretepagaoParceiros, fretepagooCarrousel],
+    liveUrl: "https://fretepagoo.com"
   }
 ];

@@ -1,7 +1,7 @@
 import * as React from "react";
 import * as Dialog from "@radix-ui/react-dialog";
 import { motion, AnimatePresence } from "framer-motion";
-import { X, ChevronLeft, ChevronRight, Layout, Info, Target, Github, Star } from "lucide-react";
+import { X, ChevronLeft, ChevronRight, Layout, Info, Target, Github, Star, ExternalLink } from "lucide-react";
 import type { Project } from "../types";
 import { Badge } from "./ui/badge";
 import { Button } from "./ui/button";
@@ -120,19 +120,30 @@ export function ProjectModal({ project, isOpen, onClose }: ProjectModalProps) {
                   <div className="p-6 md:p-10 space-y-10 bg-zinc-900">
                     <div className="flex flex-col md:flex-row md:items-start justify-between gap-6">
                       <div className="space-y-4">
-                        <div className="flex items-center gap-3">
+                        <div className="flex items-center gap-3 flex-wrap">
                           <Badge variant="indigo" className="uppercase tracking-widest text-[10px] px-3 py-1 font-bold">
                             Case: {project.type}
                           </Badge>
                           {project.githubUrl && (
-                            <a 
-                              href={project.githubUrl} 
-                              target="_blank" 
+                            <a
+                              href={project.githubUrl}
+                              target="_blank"
                               rel="noreferrer"
                               className="flex items-center gap-1.5 text-[10px] font-black text-amber-500 hover:text-amber-400 transition-colors uppercase tracking-[0.15em] bg-amber-500/10 px-3 py-1 rounded-full border border-amber-500/20"
                             >
                               <Star className="w-3 h-3 fill-current" />
                               Deixe uma estrela
+                            </a>
+                          )}
+                          {project.liveUrl && (
+                            <a
+                              href={project.liveUrl}
+                              target="_blank"
+                              rel="noreferrer"
+                              className="flex items-center gap-1.5 text-[10px] font-black text-emerald-400 hover:text-emerald-300 transition-colors uppercase tracking-[0.15em] bg-emerald-500/10 px-3 py-1 rounded-full border border-emerald-500/20"
+                            >
+                              <ExternalLink className="w-3 h-3" />
+                              Ver ao Vivo
                             </a>
                           )}
                         </div>

@@ -16,4 +16,5 @@ export type Project = {
   icon: LucideIcon;
   images?: string[];
   githubUrl?: string;
+  liveUrl?: string;
 };
