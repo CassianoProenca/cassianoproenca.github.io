@@ -101,7 +101,7 @@ export const projects: Project[] = [
     metrics: [
       { label: "Complexidade", value: "Maior case" },
       { label: "Natureza", value: "B2B" },
-      { label: "Status", value: "Em evolução" },
+      { label: "Status", value: "Produção" },
     ],
     icon: ServerCog,
     images: [nexopsLanding, nexopsProduct, nexopsHome],
